@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route } from 'react-router-dom';
+import Loginpage from './pages/Loginpage';
+import Registerpage from './pages/Registerpage';
+import Mainpage1 from './pages/Mainpage1';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Route component={Loginpage} path="/login" />
+      <Route component={Registerpage} path="/register" />
+      <Route component={Mainpage1} path={['/']} exact />  
+    </> //mainpage 주소 경로에 유저 아이디 추가 필요함
   );
-}
+};
 
 export default App;
