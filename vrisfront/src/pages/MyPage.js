@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../components/common/Header';
 
-const Mainpage1 = () => {
+const MyPage = () => {
     return (
         <>
             <Header />
-            <div>메인페이지라고</div>
+            <div>마이페이지라고~</div>
         </>
     );
 };
 
-export default Mainpage1;
+export default MyPage;

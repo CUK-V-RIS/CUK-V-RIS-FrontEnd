@@ -40,6 +40,7 @@ background: white;
 border-radius: 2px;
 `;
 
+//타이틀 V-RIS 예쁘게 하고 싶으면 컴포넌트 만들어 추후 수정함
 const AuthTemplate = ({ children }) => {
     return (
         <StyledAuthTemplate>
