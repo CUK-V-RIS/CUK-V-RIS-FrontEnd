@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 
-const StyledKakaoButton = styled.button`
+const StyledKakaoButtonSmall = styled.button`
 border: none;
 border-radius: 4px;
 padding: 1rem 2.7rem;
@@ -24,6 +24,6 @@ background-image: url('/assets/kakao_login_small.png');
 background-size: cover;
 `;
 
-const KakaoButton = props => <StyledKakaoButton{...props} />;
+const KakaoButtonSmall = props => <StyledKakaoButtonSmall{...props} />;
 
-export default KakaoButton;
+export default KakaoButtonSmall;

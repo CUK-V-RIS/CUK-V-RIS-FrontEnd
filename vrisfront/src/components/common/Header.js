@@ -42,7 +42,9 @@ const Header = () => {
             <StyledHeader>
                 <Wrapper>
                     <Link to="/">
-                        <div className='logo'>V-RIS</div>
+                        <div className='logo'>
+                            <img src='/assets/vrisLogo2.png'/>
+                            </div>
                     </Link>
                     <div className='right'>
                         <Link to="/login"><KakaoButtonSmall fullWidth></KakaoButtonSmall>

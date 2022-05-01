@@ -46,7 +46,9 @@ const AuthTemplate = ({ children }) => {
         <StyledAuthTemplate>
             <WhiteBox>
                 <div className="logo-area">
-                    <Link to="/">V-RIS</Link>
+                    <Link to="/">
+                    <img src='/assets/vrisLogo2.png'/>
+                    </Link>
                 </div>
                 {children}
             </WhiteBox>
