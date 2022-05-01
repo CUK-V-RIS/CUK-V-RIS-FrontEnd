@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Responsive from './Responsive';
-import Button from './Button';
+import { Link } from 'react-router-dom';
+import KakaoButtonSmall from '../../components/auth/KakaoButtonSmall';
 
 const StyledHeader = styled.div`
     position: fixed;
@@ -40,9 +41,12 @@ const Header = () => {
         <>
             <StyledHeader>
                 <Wrapper>
-                    <div className='logo'>V-RIS</div>
+                    <Link to="/">
+                        <div className='logo'>V-RIS</div>
+                    </Link>
                     <div className='right'>
-                        <Button>로그인</Button>
+                        <Link to="/login"><KakaoButtonSmall fullWidth></KakaoButtonSmall>
+                    </Link>
                     </div>
                 </Wrapper>
             </StyledHeader>
