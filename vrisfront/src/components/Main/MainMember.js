@@ -5,8 +5,8 @@ const MainMember = () => {
   return (
     <Flex bgColor="#2F855A">
       <Image
-        src="/assets/vrisLogoWhite.png"
-        w="8%"
+        src="/assets/vrisrealunderline.png"
+        w="9%"
         position="absolute"
         mt="5.5rem"
         ml="3.5rem"
