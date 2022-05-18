@@ -7,9 +7,8 @@ import KakaoButtonSmall from '../../components/auth/KakaoButtonSmall';
 const StyledHeader = styled.div`
     position: fixed;
     width: 100%;
-    background: #F0FFF0;
+    background: white;
     border-bottom: 1px solid #e0e0e0;
-
     
 `;
 
@@ -43,7 +42,7 @@ const Header = () => {
                 <Wrapper>
                     <Link to="/">
                         <div className='logo'>
-                            <img src='/assets/vrisLogo2.png'/>
+                            <img src='/assets/vrislogo_b.png'/>
                             </div>
                     </Link>
                     <div className='right'>

@@ -1,5 +1,7 @@
 import { Spacer, Flex, Text } from '@chakra-ui/layout';
 import { Input } from '@chakra-ui/react';
+import SerarchBar from './SearchBar';
+
 
 const Main1 = () => {
   return (
@@ -21,15 +23,10 @@ const Main1 = () => {
         <Text fontSize="40" color="white" mt="0.7em" fontWeight="extrabold">
           vegetarian restaurant 찾기 서비스
         </Text>
-        <Flex direction="column">
-          <div>
-            <Input
-              placeholder="식당, 메뉴를 입력하세요. "
-              size="Ld"
-              width="auto"
-            />
+          <div> 
+            <SerarchBar></SerarchBar>
           </div>
-        </Flex>
+
       </Flex>
     </>
   );

@@ -47,7 +47,7 @@ const AuthTemplate = ({ children }) => {
             <WhiteBox>
                 <div className="logo-area">
                     <Link to="/">
-                    <img src='/assets/vrisLogo2.png'/>
+                    <img src='/assets/vrislogo_b.png'/>
                     </Link>
                 </div>
                 {children}
