@@ -23,6 +23,7 @@ const Mainpage1 = () => {
       <Main2 />
       <Main3 />
       <Main4 />
+      <MainMember />
     </>
   );
 };

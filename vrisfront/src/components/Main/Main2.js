@@ -11,7 +11,7 @@ const Main2 = () => {
       justifyItems="center" //px는 좌우 간격(이미지랑 텍스트 py는 세로)
       px="17rem"
     >
-      <Image src="../assets/main22.jpg" borderRadius="15" boxSize="23rem" />
+      <Image src="../assets/main22.jpg" borderRadius="15" boxSize="22rem" />
       <Box>
         <Text fontSize="2.25rem" fontWeight="bold" color="#2D3748">
           ⦁ Vegetarian이란 ?<br />
