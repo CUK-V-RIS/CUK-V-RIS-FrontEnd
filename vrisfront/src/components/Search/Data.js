@@ -6,9 +6,7 @@ const Data=()=>{
 
 
 
-    return(
 
-    );
 }
 
 
