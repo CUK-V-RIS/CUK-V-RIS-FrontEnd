@@ -9,6 +9,17 @@ import {
   InputGroup,
   useToast
 } from "@chakra-ui/react";
+import {
+  Flex,
+  Spacer,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+} from '@chakra-ui/react'
 import React from "react";
 import { BiListCheck, BiSearchAlt2 } from "react-icons/bi";
 import { IoIosOptions } from "react-icons/io";
@@ -17,9 +28,14 @@ import "./SearchBar.css"
 import { Link } from 'react-router-dom';
 import SearchResult from "../../pages/SearchResult";
 import axios from 'axios'; //result 결과 연결
+import Button from "../common/Button";
+
 
 
 function SerarchBar({ onClick, onChange }) {
+
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
 
     <>
@@ -41,6 +57,30 @@ function SerarchBar({ onClick, onChange }) {
         </button>
         </Link>
       </div>
+
+      <Button onClick={onOpen}>모달 테스트</Button>
+        <Modal onClose={onClose} isOpen={isOpen} size="xl"
+          scrollBehavior="inside" colorScheme="Green">
+          <ModalOverlay color="green" />
+          <ModalContent>
+            <Flex>
+              <ModalHeader flex="1">필터 선택</ModalHeader>
+              <Spacer />
+              <ModalCloseButton />
+            </Flex>
+            <ModalBody>
+              필터 공간
+            <ModalFooter>
+              <Button
+                variant="solid"
+                size="md"
+                mt="5rem"
+                alignSelf="flex-end"
+                onClick={onClose}>닫기</Button>
+            </ModalFooter>
+            </ModalBody>
+          </ModalContent>
+        </Modal>
     </>
   );
 
