@@ -10,6 +10,7 @@ import {
   useToast
 } from "@chakra-ui/react";
 import {
+  ChakraProvider,
   Flex,
   Spacer,
   Modal,
@@ -58,18 +59,21 @@ function SerarchBar({ onClick, onChange }) {
         </Link>
       </div>
 
+      <ChakraProvider>
       <Button onClick={onOpen}>모달 테스트</Button>
         <Modal onClose={onClose} isOpen={isOpen} size="xl"
-          scrollBehavior="inside" colorScheme="Green">
+        scrollBehavior="inside" colorScheme="Green"
+      isCentered>
           <ModalOverlay color="green" />
-          <ModalContent>
+        <ModalContent>
             <Flex>
               <ModalHeader flex="1">필터 선택</ModalHeader>
               <Spacer />
               <ModalCloseButton />
             </Flex>
             <ModalBody>
-              필터 공간
+            필터 공간
+            </ModalBody>
             <ModalFooter>
               <Button
                 variant="solid"
@@ -78,9 +82,9 @@ function SerarchBar({ onClick, onChange }) {
                 alignSelf="flex-end"
                 onClick={onClose}>닫기</Button>
             </ModalFooter>
-            </ModalBody>
           </ModalContent>
         </Modal>
+        </ChakraProvider>
     </>
   );
 

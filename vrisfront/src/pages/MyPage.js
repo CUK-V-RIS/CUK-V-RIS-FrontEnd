@@ -9,6 +9,7 @@ const MyPage = () => {
             <Header />
             <div>마이페이지라고~</div>
             <main1 />
+            
         </>
     );
 };
