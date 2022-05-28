@@ -28,14 +28,19 @@ import React from 'react';
 import CardComponent from '../../src/components/Search/CardComponent';
 
 const SearchResult = () => {
-  
+
   const { isOpen, onOpen, onClose } = useDisclosure();
 
 
   return (
     <>
       <Header />
-      <SearchBar marginTop="5%" width="40%" />
+      <ChakraProvider>
+        <Flex m='5'>
+      <SearchBar width="100%" marginTop="10%"
+            inputVariant="outline" iconButtonVariant="ghost" />
+          </Flex>
+        </ChakraProvider>
       <Flex w="100vw" minH="83vh" px="0.5">
         <Text ml="30rem" fontSize="2.1rem" fontWeight="bold">
           검색 결과:
