@@ -28,6 +28,7 @@ import { Link } from 'react-router-dom';
 import SearchResult from "../../pages/SearchResult";
 import axios from 'axios'; //result 결과 연결
 import Button from "../common/Button";
+import FilterBox from "../Search/FilterBox";
 
 
 
@@ -83,7 +84,22 @@ function SerarchBar({ onClick, onChange }) {
               <ModalCloseButton />
             </Flex>
             <ModalBody>
-            필터 공간
+              
+            <FilterBox
+              type="지역"
+              options={seoulAreas}
+                      />
+                      
+                      <FilterBox
+              type="채식 단계"
+              options={vegetarianStages}
+                      />
+                      
+                      <FilterBox
+              type="종류"
+              options={restaurantTypes}
+            />
+
             </ModalBody>
             <ModalFooter>
               <Button
@@ -108,21 +124,56 @@ function SerarchBar({ onClick, onChange }) {
 
 }
 
-function Result({ veganres }) {
   
-  var lis = [];
-  for (var i = 0; i < veganres.length; i++){
-    var item = veganres[i];
-    lis.push(
+const seoulAreas = [
+  "강서구",
+  "양천구",
+  "구로구",
+  "금천구",
+  "영등포구",
+  "마포구",
+  "은평구",
+  "서대문구",
+  "동작구",
+  "관악구",
+  "용산구",
+  "서초구",
+  "강남구",
+  "송파구",
+  "강동구",
+  "중구",
+  "종로구",
+  "성북구",
+  "강북구",
+  "도봉구",
+  "노원구",
+  "중랑구",
+  "동대문구",
+  "성동구",
+  "광진구",
+];
 
-    )
-  }
-
-}
-
-
-  const url = '/v1/vegan-res/restaurantName/{resName}';
-
+const vegetarianStages = [
+  "비건",
+  "락토",
+  "오보",
+  "락토 오보",
+  "페스코",
+  "폴로",
+  "플렉시테리언",
+];
+const restaurantTypes = [
+  "한식",
+  "분식",
+  "카페",
+  "베이커리",
+  "양식",
+  "술집",
+  "인도/중동",
+  "중식",
+  "동남아",
+  "일식",
+];
 
 
 
