@@ -12,20 +12,17 @@ export default function FilterBox({
 `;
   
   const stack = options.map((option) => (
-    <Stack direction='row' wrap='wrap' align='center' >
-    <Button spacing={4} size='md'>
+    <Button m={1.5} colorScheme='teal' variant='outline'>
       {option}
       </Button>
-      </Stack>
   ));
 
   return (
     <TypeContainer>
       <Text fontSize="xl" fontWeight="bold">{type}</Text>
-      <FormControl>
+      <FormControl spacing={4} direction="row">
         {stack}
       </FormControl>
-
     </TypeContainer>
   );
 }

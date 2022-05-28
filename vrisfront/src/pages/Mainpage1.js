@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/common/Header';
-import { Flex, Image, Input } from '@chakra-ui/react';
+import { Flex, Image, Input} from '@chakra-ui/react';
 import Main1 from '../../src/components/Main/Main1';
 import Main2 from '../../src/components/Main/Main2';
 import Main3 from '../../src/components/Main/Main3';

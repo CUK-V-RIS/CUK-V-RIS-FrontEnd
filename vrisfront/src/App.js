@@ -8,6 +8,8 @@ import SearchResult from './pages/SearchResult';
 
 
 const App = () => {
+
+
   return (
     <>
       <Route component={Loginpage} path="/login" />
@@ -15,8 +17,15 @@ const App = () => {
       <Route component={Mainpage1} path={['/']} exact />  
       <Route component={MyPage} path="/mypage" />
       <Route component={SearchResult} path="/SearchResult" />
+
     </> //mainpage 주소 경로에 유저 아이디 추가 필요함
+ 
   );
+
 };
+
+
+
+
 
 export default App;
