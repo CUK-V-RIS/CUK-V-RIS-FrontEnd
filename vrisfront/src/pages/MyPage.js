@@ -8,7 +8,7 @@ const MyPage = () => {
     return (
         <>
             <Header />
-            <div>마이페이지라고~</div>
+            <div>마이페이지라고~ 깃허브무서워</div>
             <main1 />
             
         </>
