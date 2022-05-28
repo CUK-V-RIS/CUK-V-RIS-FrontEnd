@@ -15,7 +15,7 @@ const SearchResult = () => {
           검색 결과:
         </Text>
         <Flex flexDirection="column">
-        <Grid mt="5rem" px="10%" justifyItems="center" templateColums="repeat(3, 1fr)">
+        <Grid mt="5rem" px="10%" justifyItems="center" templateColumns="repeat(1, 1fr)">
           <GridItem bg="red" borderRadius="15" boxSize="14rem" mb="0" />
           <Text fontWeight="bold" fontSize="1.5rem" mb="0">
             뉴델리
