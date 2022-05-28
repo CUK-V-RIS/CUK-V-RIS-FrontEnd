@@ -3,3 +3,10 @@ import {useState} from "react";
 import React from 'react';
 import Data from "./Data"
 
+const Card=()=>{
+    
+  
+}
+
+export default Card;
+
