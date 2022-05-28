@@ -46,10 +46,10 @@ const SearchResult = () => {
           검색 결과:
         </Text>
         <Flex flexDirection="column">
-          <Grid mt="5rem" px="10%" justifyItems="center" templateColums="repeat(3, 1fr)">
+          <Grid mt="5rem" px="10%" justifyItems="center" templateColumns="repeat(1, 1fr)">
             <GridItem borderRadius="15" boxSize="14rem" mb="0">
               <ChakraProvider>
-              <Image src={`/assets/newdeli.png`} objectFit="fill" onClick={onOpen} />
+              <Image src={`/assets/newdeli.png`} objectFit="fill" borderRadius="10" onClick={onOpen} />
         <Modal onClose={onClose} isOpen={isOpen} size="xl">
           <ModalOverlay color="green" />
                     <ModalContent>
