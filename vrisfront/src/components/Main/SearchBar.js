@@ -25,14 +25,13 @@ import React from "react";
 import { BiListCheck, BiSearchAlt2 } from "react-icons/bi";
 import { IoIosOptions } from "react-icons/io";
 import { Link } from 'react-router-dom';
-import SearchResult from "../../pages/SearchResult";
 import axios from 'axios'; //result 결과 연결
 import Button from "../common/Button";
 import FilterBox from "../Search/FilterBox";
 
 
 
-function SerarchBar({ onClick, onChange }) {
+function SerarchBar({onChange }) {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -50,16 +49,18 @@ function SerarchBar({ onClick, onChange }) {
                 icon={<BiSearchAlt2 />}
                 />
               </InputLeftElement>
-              </Link>  
+            </Link>  
+            
             <Input
               id="input1"
               type="search"
               bgcolor="white"
-              placeholder="    식당 이름을 입력해 주세요"
+              placeholder="        식당 이름을 입력해 주세요"
               px="10px"
               h="50px"
               width="500px"
               borderRadius="100"
+              variant="outline"
           onChange={onChange}
             />
 

@@ -4,6 +4,7 @@ import Header from '../components/common/Header';
 
 
 const MyPage = () => {
+    
     return (
         <>
             <Header />
